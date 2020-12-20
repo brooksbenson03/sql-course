@@ -1,0 +1,1 @@
+DELETE FROM cities WHERE name = 'Tokyo'; -- delete row whose name is 'Tokyo'
