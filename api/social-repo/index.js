@@ -6,7 +6,7 @@ pool.connect({
   port: 5432,
   database: 'social-network',
   user: 'postgres',
-  pass: 'funwithpostgresql',
+  password: 'funwithpostgresql'
 }).then(() => {
   app().listen(3005, () => {
     console.log('Listening on port 3005')
