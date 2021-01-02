@@ -6,7 +6,7 @@ const router = Router()
   To protect against SQL Injection Attacks,
   it's good to use prepared statements as a
   safegaurd.
-*/
+*/ 
 
 router.get('/users', async (req, res) => {
   const users = await UserRepo.find()

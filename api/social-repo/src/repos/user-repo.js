@@ -46,6 +46,14 @@ class UserRepo {
     const [user] = toCamelCase(rows)
     return user;
   }
+
+  static async count() {
+    const { rows } = await pool.query(`
+      SELECT COUNT(*) FROM users;
+    `)
+    const { count } = rows[0]
+    return +count
+  }
 }
 
 module.exports = UserRepo
